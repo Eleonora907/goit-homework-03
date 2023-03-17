@@ -6,11 +6,11 @@
 html {
   box-sizing: border-box;
 }
-*,
+/* *,
 *::before,
 *::after {
-  box-sizing: inherit;
-}
+  box-sizing: border-box;
+} */
 h1,
 h2,
 h3,
@@ -72,7 +72,7 @@ a {
   */
   --items: 4;
   --col-indent: 24px;
-  --row-indent: var(--col-indent);
+  --row-indent: 48px;
 }
 /**
     |============================
@@ -99,7 +99,7 @@ body {
 }
 .container {
   max-width: 1158px;
-  width: 100%;
+  /* width: 100%; */
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -129,6 +129,7 @@ body {
   color: var(--title-text-color);
 }
 .btn {
+  border: 0;
   display: block;
   margin: auto;
   font-family: inherit;
@@ -177,6 +178,8 @@ body {
   align-items: center;
 }
 .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-right: 76px;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -218,6 +221,8 @@ body {
 }
 
 .contacts-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-style: normal;
   color: var(--primary-text-color);
 }
@@ -240,7 +245,7 @@ body {
 .hero-section {
   padding-top: 188px;
   padding-bottom: 188px;
-  text-align: CENTER;
+  /* text-align: center; */
   background-color: var(--primary-background-color);
 }
 .hero-title {
@@ -318,6 +323,7 @@ body {
   | Our team
   |============================
 */
+
 .our-team-list {
   display: flex;
 }
@@ -326,6 +332,15 @@ body {
   padding-top: 120px;
 }
 
+.our-team-section {
+  background-color: var(--secondary-background-color);
+}
+.our-team-item {
+  background-color: var(--main-background-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
 .our-team-desc {
   padding: 32px 16px;
   text-align: center;
@@ -365,9 +380,15 @@ body {
   | Portfolio 
   |============================
 */
+
+.our-works {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 .filter-btn {
   padding: 11px 23px;
   gap: 24px;
+  margin-bottom: 72px;
   color: var(--filter-btn-color);
   background-color: var(--filter-btn-background-color);
   border: 1px solid var(--filter-btn-background-color);
@@ -378,23 +399,19 @@ body {
   color: var(--filter-btn-accent-text-color);
   background-color: var(--accent-color);
 }
-
-.our-works-filters-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 96px;
-  padding-bottom: 72px;
-}
 .our-works-filters {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
+
 .our-works-items {
   --items: 3;
 }
-.our-works-items-container {
+.our-works-container {
   padding-bottom: 120px;
+  align-items: center;
+  justify-content: center;
 }
 
 .our-works-desc-section {
