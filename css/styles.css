@@ -6,11 +6,7 @@
 html {
   box-sizing: border-box;
 }
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-} */
+
 h1,
 h2,
 h3,
@@ -171,7 +167,7 @@ body {
   |============================
 */
 .header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--filter-btn-background-color);
 }
 .header-container {
   display: flex;
@@ -212,7 +208,7 @@ body {
 }
 .current {
   color: var(--accent-color);
-  border-bottom: 4px solid #404bbf;
+  /* border-bottom: 4px solid #404bbf; */
 }
 
 .contacts-list {
@@ -388,7 +384,7 @@ body {
 .filter-btn {
   padding: 11px 23px;
   gap: 24px;
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
   color: var(--filter-btn-color);
   background-color: var(--filter-btn-background-color);
   border: 1px solid var(--filter-btn-background-color);
@@ -403,6 +399,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-bottom: 72px;
 }
 
 .our-works-items {
@@ -419,9 +416,9 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--filter-btn-background-color);
+  border-left: 1px solid var(--filter-btn-background-color);
+  border-right: 1px solid var(--filter-btn-background-color);
 }
 /**
   |============================
